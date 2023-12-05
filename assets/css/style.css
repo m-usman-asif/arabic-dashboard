@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea, p {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a, a:hover {
+	text-decoration: none !important;
+  color: inherit;
+}
+a:focus {
+	text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Noto Sans Arabic';
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+.contentWrapper {
+  padding: 60px 35px;
+}
+.content {
+  font-size: 28px;
+  font-weight: 400;
+}
+.cta {
+  background-color: #7D85A4;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 4px 27px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.completed {
+  background-color: #5FCF97;
+  color: #ffffff;
+}
+.inProgress {
+  background-color: #FECF4B;
+  color: #697193;
+}
+/************** Header CSS Starts **************/
+header {
+  padding: 15px 35px;
+  border-top: 1px solid #707070;
+  box-shadow: 0 0 3px 6px #00000016;
+}
+header a {
+  font-size: 45px;
+  font-weight: 400;
+  color: #646D8F;
+}
+/************** Header CSS Ends ****************/
+
+/********* Greetings Bar Starts***********/
+.greetingsBar {
+  position: relative;
+  padding: 35px 115px 35px 35px;
+  background: url('../images/notify-bg.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+.greetingsBar .mainHeading {
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.greetingsBar .mainHeading span {
+  font-weight: 500;
+}
+.greetingsBar .content {
+  color: #ffffff;
+}
+.closeIcon {
+  position: absolute;
+  top: 27px;
+  left: 35px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 27px;
+}
+.bg-green {
+  background-color: #50B68E;
+}
+/********* Greetings Bar Ends***********/
+
+/**** Notification Bar Starts***********/
+.notificationBar {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px 110px 20px 20px;
+  box-shadow: 0 1px 7.5px 0 #00000016;
+  margin-bottom: 22px;
+}
+.notificationBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #697193;
+}
+.notificationBar p{
+  font-size: 25px;
+  font-weight: 400;
+  color: #697193;
+}
+.notificationBar .closeIcon {
+  color: #697193;
+}
+/**** Notification Bar Ends*************/
+
+/****** Create Store Task Starts ******/
+.createStoreTasksWrapper {
+  box-shadow: 0 1px 7.5px 0 #00000016;
+  padding: 30px 40px;
+  margin: 50px 0 80px 0;
+}
+.createStoreTasksWrapper .storeHead {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.taskCollapser {
+  font-size: 20px;
+  color: #697193;
+}
+.storeHead .storeTaskHead {
+  flex: 1;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.storeTaskHead .content {
+  color: #697193;
+}
+.storeHead .storeTaskHead .progress {
+  flex: 1;
+  height: 35px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 18px;
+}
+.storeTasksWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 60px 0;
+}
+.taskBoxWrapper {
+  border-radius: 10px;
+  padding: 25px 40px;
+  width: 32%;
+  box-shadow: 0px 3px 3px 0px #00000016;
+}
+.taskBoxWrapper .taskHead {
+  display: flex;
+  gap: 25px;
+}
+.taskBoxWrapper .taskHead p {
+  font-size: 21px;
+  font-weight: 400;
+}
+.taskBoxWrapper .taskHead .cta span{
+  margin-left: 10px;
+}
+.taskBoxWrapper .tackDetails {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  max-width: 350px;
+}
+.taskBoxWrapper .tackDetails p {
+  font-size: 18px;
+  color: #697193;
+}
+.taskBoxWrapper .taskAction {
+  text-align: center;
+}
+/****** Create Store Task Starts ******/
+
+/******* Reports Section Starts *******/
+.sectionHead .secHeading {
+  font-size: 31px;
+  font-weight: 400;
+  color: #5FCF97;
+  display: flex;
+  align-items: flex-end;
+}
+.sectionHead .secHeading span {
+  max-width: 55px;
+  margin-left: 45px;
+}
+.sectionHead .secSubHeading {
+  margin: 15px 0 30px;
+  font-size: 21px;
+  color: #697193;
+}
+.reportStatusWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+.statusBox {
+  padding: 35px 20px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  width: 24%;
+  border-radius: 10px;
+}
+.statusBox .report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.statusBox .report .reportInfo .count{
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #697193;
+}
+.statusBox .report .reportInfo .label{
+  font-size: 20px;
+  color: #697193;
+}
+.reportGraph canvas {
+  width: 60px !important;
+  height: 60px !important;
+  overflow: hidden;
+}
+.pieGraph canvas {
+  width: 90px !important;
+  height: 90px !important;
+}
+.secBarChart canvas {
+  width: 100px !important;
+}
+.statusBox .reportDuration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.statusBox .reportDuration .duration {
+  color: #6E6565;
+}
+.statusBox .reportDuration .percentage {
+  color: #1EC275;
+}
+/******* Reports Section Ends *******/
+
+/* Sales Analytcs Wrapper Starts */
+.salesAnalyticsWrapper {
+  margin: 30px 0 60px;
+  display: flex;
+  gap: 25px;
+}
+.salesAnalyticsWrapper .leftcol {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.salesAnalyticsWrapper .leftcol .statusBox {
+  width: 100%;
+}
+.salesAnalyticsWrapper .rightCol {
+  width: 58%;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  padding: 25px 40px;
+  border-radius: 10px;
+}
+.newOrdersBox {
+  padding: 25px 40px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  border-radius: 10px;
+}
+.boxHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.boxHeader .title{
+  font-size: 24px;
+  font-weight: 400;
+  color: #6E6565
+}
+.boxHeader .processedNum {
+  font-size: 17px;
+  color: #6E6565
+}
+.ordersBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #6E6565
+}
+.pieRepresentation {
+  display: flex;
+  justify-content: center;
+}
+.pieRepresentation canvas {
+  width: 180px !important;
+  height: 180px !important;
+}
+.analyticsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.analyticsHeader .title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #6E6565;
+}
+.graphType {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: #6E6565;
+}
+.graphType select{
+  border: none !important;
+  outline: none !important;
+  font-size: 15px;
+}
+.incomeDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.incomeDisplay .label {
+  color: #6E6565;
+  margin-left: 18px;
+}
+.incomeDisplay .amount {
+  color: #63B1EC;
+}
+/* Sales Analytcs Wrapper Ends */
+
+/* Order Graph Wrapper Css Starts */
+.orderGraphWrapper {
+  padding: 25px 40px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+/* Order Graph Wrapper Ends */
+
+/********* New Orders Table Sarts *********/
+
+.newOrdersTableWrapper {
+  padding: 25px 40px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+.newOrdersTableWrapper .sectionHead {
+  margin-bottom: 50px;
+}
+.newOrdersTableWrapper .table{
+  white-space:nowrap;
+  width:100%;
+  overflow-x: scroll;
+}
+.newOrdersTableWrapper .table th {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6E6565;
+  border: none;
+  padding: 15px 10px;
+}
+.newOrdersTableWrapper .table tbody tr {
+  font-size: 18px;
+  font-weight: 400;
+  color: #646D8F;
+  border: 1px solid #707070;
+}
+.settings img {
+  max-width: 25px;
+  margin-left: 10px;
+}
+.settings span {
+  font-size: 15px;
+}
+.newOrdersTableWrapper .table tbody tr td .cta{
+  display: inline-block;
+  font-size: 16px;
+}
+.collapseWrapper {
+  padding: 0px 25px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  border-radius: 10px;
+}
+.collapseTr {
+  border: none !important;
+}
+.collapseTr td {
+  padding: 0;
+  padding-bottom: 20px;
+  border: none;
+}
+.collapseInnerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+.collapseInnerContent .leftCol,
+.collapseInnerContent .rightCol {
+  width: 46%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.firstLeftCol .orderDetails {
+  display: flex;
+  gap: 15px;
+}
+.firstLeftCol .orderDetails span.label {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.firstLeftCol .orderDetails span {
+  display: block;
+}
+.collapseInnerContent p {
+  font-size: 16px;
+  color: #646D8F;
+  margin-bottom: 10px;
+}
+.collapseInnerContent .cta {
+  background: transparent;
+  color: #646D8F !important;
+  border: 1px solid #646D8F;
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+.collapseInnerContent .cta:hover {
+  background-color: #646D8F;
+  color: #ffffff !important;
+}
+.rightCol .firstRightCol {
+  margin-top: 55px;
+} 
+.rightCol .secRightCol p i {
+  margin-left: 15px;
+}
+.collapseActionBar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.collapseActionBar .danger {
+  background-color: #FF0000;
+}
+/********* New Orders Table Sarts *********/
+
+
+/****** Product Display Grid Starts*********/
+.productDisplayWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.productDisplayWrapper .leftCol ,
+.productDisplayWrapper .rightCol{
+  width: 49%;
+  padding: 25px 40px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  border-radius: 10px;
+}
+.productDisplayHead {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 45px;
+}
+.productDisplayHead .taskCollapser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+.productDisplayHead .secTitle {
+  font-size: 25px;
+  font-weight: 400;
+  color: #697193;
+}
+.productDisplayGrid .nav {
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 35px !important;
+}
+.productDisplayGrid .nav-pills .nav-link.active, 
+.productDisplayGrid .nav-pills .show>.nav-link {
+  background-color: transparent !important;
+}
+.productDisplayGrid .nav-link {
+  color: #BBB3B3;
+  font-size: 21px;
+  font-weight: 400;
+}
+.productDisplayGrid .nav-link.active {
+  color: #646D8F;
+  font-weight: 500;
+}
+.prodFlexBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.productBox {
+  width: 45%;
+  border-radius: 25px;
+  background-color: #EBF0F1;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+.productBox:hover {
+  background-color: #E4ECF5;
+}
+.productBox img {
+  max-width: 165px;
+  width: 100%;
+  min-height: 165px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+.productBox .prodDesc .productName {
+  font-size: 17px;
+  color: #6E6565;
+  margin-bottom: 10px;
+}
+.productBox .prodDesc .salesCount {
+  font-size: 17px;
+  color: #6E6565;
+}
+.productDisplayGrid .tab-content .btnWrap {
+  text-align: center;
+  margin: 40px 0;
+}
+.productDisplayGrid .tab-content .btnWrap a {
+  font-size: 24px;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background: #5FCF97;
+  display: inline-block;
+}
+.productDisplayWrapper .rightCol .taskCollapser{
+  background: #E1253E;
+}
+.productDisplayWrapper .rightCol .btnWrap a {
+  background: #E1253E;
+}
+/****** Product Display Grid Ends*********/
+
+/****** Choose Sec Wrapper Starts ********/
+
+.chooseSecWrapper .sectionHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.chooseSecWrapper .sectionHead .cta {
+  background: transparent;
+  border: 1px solid #1EC275;
+  color: #646D8F;
+}
+.chooseSecWrapper .sectionHead .cta:hover {
+  background: #1EC275;
+  color: #ffffff;
+}
+.chooseBox {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  box-shadow: 0px 3px 3px 0px #00000016;
+  padding: 35px 25px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+.chooseBox .imgBox {
+  width: 20%;
+  border-radius: 10px;
+}
+.chooseBox .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.chooseBox .contentBox {
+  width: 75%;
+}
+.chooseBox .contentBox .title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #646D8F;
+}
+.chooseBox .contentBox .desc {
+  font-size: 19px;
+  font-weight: 400;
+  color: #646D8F;
+  margin-bottom: 30px;
+}
+.chooseBox .actionBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chooseBox .actionBar .cta{
+  background-color: #5FCF97
+}
+/****** Choose Sec Wrapper Ends ********/

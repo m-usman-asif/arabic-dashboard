@@ -1,0 +1,324 @@
+@media only screen and (max-width:1920px){
+	.storeTasksWrapper {
+		gap: 20px;
+	}
+}
+@media only screen and (max-width:1600px){}
+@media only screen and (max-width:1440px){
+	.productDisplayGrid .nav {
+		gap: 25px;
+	}
+}
+@media only screen and (max-width:1366px){
+	.contentWrapper {
+		padding: 60px 15px;
+	}
+	.rightCol .secRightCol p i {
+		margin-left: 10px;
+	}
+	.rightCol .secRightCol p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.rightCol .firstRightCol p{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width:1280px){
+	.taskBoxWrapper {
+		padding: 25px 15px;
+	}
+	.productDisplayGrid .nav {
+		gap: 10px;
+	}
+	.productDisplayWrapper .leftCol, .productDisplayWrapper .rightCol {
+		padding: 25px 15px;
+	}
+}
+@media only screen and (max-width:1200px){
+	.notificationBar {
+		padding: 20px 40px 20px 20px;
+	}
+	.notificationBar p {
+		font-size: 20px;
+	}
+	.storeTaskHead .content {
+		font-size: 24px;
+	}
+	.storeTasksWrapper {
+		gap: 0px;
+		justify-content: space-between;
+	}
+	.taskBoxWrapper {
+		width: 49%;
+		margin-bottom: 20px;
+	}
+	.reportStatusWrapper {
+		flex-wrap: wrap;
+	}
+	.statusBox {
+		width: 49%;
+	}
+	.salesAnalyticsWrapper {
+		flex-wrap: wrap;
+	}
+	.salesAnalyticsWrapper .rightCol {
+		padding: 25px 15px;
+		width: 100%;
+	}
+	.salesAnalyticsWrapper .leftcol {
+		width: 100%;
+		flex-direction: row;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 49%;
+	}
+	.newOrdersBox {
+		width: 49%;
+	}
+	.productDisplayGrid .nav {
+		gap: 5px;
+	}
+	.prodFlexBox {
+		gap: 20px
+	}
+	.newOrdersTableWrapper .table th {
+		font-size: 16px;
+		padding: 15px 25px;
+	}
+	.collapseInnerContent .leftCol {
+		width: 40%;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.collapseInnerContent .rightCol {
+		width: 58%;
+	}
+}
+@media only screen and (max-width:1170px){}
+@media only screen and (max-width:1040px){}
+@media only screen and (max-width:1024px){
+	.productDisplayWrapper {
+		flex-wrap: wrap;
+	}
+	.productDisplayWrapper .leftCol,
+	.productDisplayWrapper .rightCol {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
+@media only screen and (max-width:991px){
+	.greetingsBar {
+		padding: 35px 20px;
+	}
+	.notificationBar p{
+		font-size: 16px;
+	}
+	.storeHead .storeTaskHead {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.storeTaskHead .content {
+		width: 100%;
+	}
+	.reportStatusWrapper {
+		gap: 10px;
+	}
+	.salesAnalyticsWrapper .leftcol {
+		flex-wrap: wrap;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 100%;
+	}
+	.newOrdersBox {
+		width: 100%;
+	}
+	.orderGraphWrapper {
+		padding: 25px 15px;
+	}
+}
+@media only screen and (max-width:910px){}
+@media only screen and (max-width:767px){
+	header {
+		text-align: center;
+	}
+	header a {
+		font-size: 36px;
+	}
+	.notificationBar {
+		flex-wrap: wrap;
+	}
+	.notificationBar p {
+		width: 95%;
+	}
+	.closeIcon {
+		top: 10px;
+		left: 15px;
+		font-size: 18px;
+	}
+	.createStoreTasksWrapper {
+		padding: 30px 15px;
+	}
+	.storeTaskHead .content {
+		font-size: 20px;
+	}
+	.storeHead .storeTaskHead .progress {
+		height: 25px;
+		font-size: 15px;
+	}
+	.taskBoxWrapper {
+		width: 100%;
+	}
+	.taskBoxWrapper .taskHead {
+		justify-content: space-between;
+	}
+	.reportStatusWrapper {
+		gap: 0;
+	}
+	.statusBox {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.incomeDisplay {
+		font-size: 15px;
+	}
+	.productBox {
+		width: 48%;
+	}
+	.chooseBox {
+		flex-wrap: wrap;
+		padding: 35px 15px;
+		flex-direction: column;
+	}
+	.chooseBox .imgBox {
+		width: 50%;
+	}
+	.chooseBox .contentBox {
+		width: 100%;
+		text-align: center;
+	}
+	.chooseBox .contentBox .title {
+		font-size: 22px;
+	}
+	.chooseBox .contentBox .desc {
+		font-size: 16px;
+	}
+	.newOrdersTableWrapper {
+		padding: 25px 15px;
+	}
+}
+@media only screen and (max-width:575px){
+	.createStoreTasksWrapper .storeHead {
+		gap: 20px;
+	}
+	.incomeDisplay {
+		font-size: 14px;
+	}
+	.incomeDisplay .label {
+		margin-left: 5px;
+	}
+	.productDisplayGrid .nav-link {
+		font-size: 18px;
+	}
+	.prodFlexBox {
+		gap: 0px;
+		justify-content: space-between;
+	}
+	.productBox {
+		margin-bottom: 20px;
+	}
+	.chooseBox .contentBox .title {
+		font-size: 20px;
+	}
+	.newOrdersTableWrapper .sectionHead .secHeading {
+		font-size: 24px;
+	}
+	.newOrdersTableWrapper .sectionHead .secHeading span {
+		max-width: 30px;
+		margin-left: 20px;
+	}
+}
+@media only screen and (max-width:480px){
+	header a {
+		font-size: 28px;
+	}
+	.greetingsBar .mainHeading {
+		font-size: 24px;
+	}
+	.greetingsBar .content {
+		font-size: 18px;
+	}
+	.analyticsHeader .title {
+		font-size: 18px;
+	}
+	.graphType {
+		font-size: 15px;
+	}
+	.graphType select {
+		font-size: 14px;
+	}
+	.newOrdersBox {
+		padding: 25px 15px;
+	}
+	.productBox {
+		width: 100%;
+	}
+}
+@media only screen and (max-width:385px){
+	.notificationBar {
+		padding: 20px 15px;
+	}
+	.notificationBar::after {
+		width: 5px;
+	}
+	.taskBoxWrapper .taskHead p {
+		font-size: 18px;
+	}
+	.taskBoxWrapper .tackDetails p {
+		font-size: 16px;
+	}
+	.storeTaskHead .content {
+		font-size: 18px;
+	}
+	.cta {
+		font-size: 14px;
+		padding: 4px 7px;
+	}
+	.createStoreTasksWrapper {
+		padding: 30px 0px;
+		box-shadow: none;
+	}
+	.incomeDisplay {
+		font-size: 14px;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.statusBox .report .reportInfo .count {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.statusBox .report .reportInfo .label {
+		font-size: 16px;
+	}
+	.boxHeader .title {
+		font-size: 18px;
+	}
+	.boxHeader .processedNum {
+		font-size: 15px;
+	}
+	.newOrdersBox {
+		padding: 25px 10px;
+	}
+	.ordersBar {
+		font-size: 14px;
+	}
+	.pieRepresentation canvas {
+		margin: 10px 0;
+	}
+	.productDisplayHead {
+		gap: 15px;
+	}
+	.productDisplayHead .secTitle {
+		font-size: 20px;
+	}
+}
