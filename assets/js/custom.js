@@ -173,6 +173,7 @@ var lineChartVal = {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: true,
         title: {
             display: false,
         },
@@ -303,7 +304,8 @@ var orderBarGraph = {
         plugins: {
             legend: {
                 display: true,
-                position: 'top',
+                position: "top",
+                align: "end",
                 labels: {
                     usePointStyle: true,
                     font: {

@@ -17,21 +17,21 @@
 
 
     <div class="contentWrapper">
-        <div class="greetingsBar">
+        <div class="greetingsBar alert alert-warning alert-dismissible fade show" role="alert">
             <p class="mainHeading">مساء الخير <span>سعد</span></p>
             <p class="content">آخر زيارة لك كانت أمس الساعة 8:00 صباحا</p>
-            <span class="closeIcon"><i class="fa-solid fa-xmark"></i></span>
+            <span class="closeIcon" data-bs-dismiss="alert" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
         </div>
 
-        <div class="notificationBar">
+        <div class="notificationBar alert alert-warning alert-dismissible fade show" role="alert">
             <p>لقد قمنا بتحديث واجهة المتجر لجعل تجربة التسوق أكثر سلاسة ومتعة</p>
-            <button class="cta">جرب الآن</button>
-            <span class="closeIcon"><i class="fa-solid fa-xmark"></i></span>
+            <button class="cta" type="button">جرب الآن</button>
+            <span class="closeIcon" data-bs-dismiss="alert" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
         </div>
-        <div class="notificationBar">
+        <div class="notificationBar mb-0 alert alert-warning alert-dismissible fade show" role="alert">
             <p>تم تحديث نظام الدفع لتجربة أسرع وأكثر أمانًا</p>
-            <button class="cta">جرب الآن</button>
-            <span class="closeIcon"><i class="fa-solid fa-xmark"></i></span>
+            <button class="cta" type="button">جرب الآن</button>
+            <span class="closeIcon" data-bs-dismiss="alert" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
         </div>
 
         <div class="createStoreTasksWrapper">
@@ -306,16 +306,19 @@
                             <td>39 ر.ع</td>
                             <td class="settings">
                                 <img src="assets/images/settings.png" alt="settings">
-                                <span data-bs-toggle="collapse" data-bs-target="#details1" aria-expanded="false" aria-controls="details1"><i class="fa-solid fa-chevron-down"></i></span>
+                                <span data-bs-toggle="collapse" data-bs-target="#details1" aria-expanded="false" aria-controls="details1">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="collapseTr">
                             <td colspan="12">
                                 <div class="collapseWrapper collapse" id="details1">
                                     <div class="collapseInnerContent">
-                                        <div class="leftCol">
-                                            <div class="firstLeftCol">
-                                                <button class="cta"> المنتجات</button>
+                                        <div class="collapseColWrap">
+                                            <div class="firstCol columns pe-0">
+                                                <p> <span class="colTitle">المنتجات</span> </p>
                                                 <div class="orderDetails">
                                                     <p> <span class="label">SKU</span> <span class="value">ZD2</span> </p>
                                                     <p> <span class="label">الاسم</span> <span class="value">اسم المنتج</span> </p>
@@ -324,32 +327,24 @@
                                                     <p> <span class="label">المجموع</span> <span class="value">100.00 SAR</span> </p>
                                                 </div>
                                             </div>
-                                            <div class="secLeftCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="secCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <div class="orderDetails">
-                                                    <p>قيمة المنتجات</p>
-                                                    <p>التوصيل</p>
-                                                    <p>دفع عند الاستلام</p>
-                                                    <p>المجموع الكلي</p>
+                                                    <p><span>قيمة المنتجات</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>التوصيل</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>دفع عند الاستلام</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>المجموع الكلي</span> <span>2600.00 SAR</span></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rightCol">
-                                            <div class="firstRightCol">
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                            </div>
-                                            <div class="secRightCol">
-                                                <button class="cta">العميل</button>
+                                            <div class="thirdCol columns">
+                                                <p> <span class="colTitle">العميل</span> </p>
                                                 <p><i class="fa-solid fa-user"></i> <span>قيمة المنتجات</span></p>
                                                 <p><i class="fa-solid fa-phone-flip"></i> <span>966555255145</span></p>
                                                 <p><i class="fa-solid fa-location-dot"></i> <span>الرياض,الربوة,الأبهري
                                                     باب رقم 59</span></p>
                                             </div>
-                                            <div class="thirdRightCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="fourthCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <p>في انتظار
                                                     شركة التوصيل
                                                 </p>
@@ -375,16 +370,19 @@
                             <td>39 ر.ع</td>
                             <td class="settings">
                                 <img src="assets/images/settings.png" alt="settings">
-                                <span data-bs-toggle="collapse" data-bs-target="#details2" aria-expanded="false" aria-controls="details2"><i class="fa-solid fa-chevron-down"></i></span>
+                                <span data-bs-toggle="collapse" data-bs-target="#details2" aria-expanded="false" aria-controls="details2">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="collapseTr">
                             <td colspan="12">
                                 <div class="collapseWrapper collapse" id="details2">
                                     <div class="collapseInnerContent">
-                                        <div class="leftCol">
-                                            <div class="firstLeftCol">
-                                                <button class="cta"> المنتجات</button>
+                                        <div class="collapseColWrap">
+                                            <div class="firstCol columns pe-0">
+                                                <p> <span class="colTitle">المنتجات</span> </p>
                                                 <div class="orderDetails">
                                                     <p> <span class="label">SKU</span> <span class="value">ZD2</span> </p>
                                                     <p> <span class="label">الاسم</span> <span class="value">اسم المنتج</span> </p>
@@ -393,32 +391,24 @@
                                                     <p> <span class="label">المجموع</span> <span class="value">100.00 SAR</span> </p>
                                                 </div>
                                             </div>
-                                            <div class="secLeftCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="secCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <div class="orderDetails">
-                                                    <p>قيمة المنتجات</p>
-                                                    <p>التوصيل</p>
-                                                    <p>دفع عند الاستلام</p>
-                                                    <p>المجموع الكلي</p>
+                                                    <p><span>قيمة المنتجات</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>التوصيل</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>دفع عند الاستلام</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>المجموع الكلي</span> <span>2600.00 SAR</span></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rightCol">
-                                            <div class="firstRightCol">
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                            </div>
-                                            <div class="secRightCol">
-                                                <button class="cta">العميل</button>
+                                            <div class="thirdCol columns">
+                                                <p> <span class="colTitle">العميل</span> </p>
                                                 <p><i class="fa-solid fa-user"></i> <span>قيمة المنتجات</span></p>
                                                 <p><i class="fa-solid fa-phone-flip"></i> <span>966555255145</span></p>
                                                 <p><i class="fa-solid fa-location-dot"></i> <span>الرياض,الربوة,الأبهري
                                                     باب رقم 59</span></p>
                                             </div>
-                                            <div class="thirdRightCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="fourthCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <p>في انتظار
                                                     شركة التوصيل
                                                 </p>
@@ -444,16 +434,19 @@
                             <td>39 ر.ع</td>
                             <td class="settings">
                                 <img src="assets/images/settings.png" alt="settings">
-                                <span data-bs-toggle="collapse" data-bs-target="#details3" aria-expanded="false" aria-controls="details3"><i class="fa-solid fa-chevron-down"></i></span>
+                                <span data-bs-toggle="collapse" data-bs-target="#details3" aria-expanded="false" aria-controls="details3">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="collapseTr">
                             <td colspan="12">
                                 <div class="collapseWrapper collapse" id="details3">
                                     <div class="collapseInnerContent">
-                                        <div class="leftCol">
-                                            <div class="firstLeftCol">
-                                                <button class="cta"> المنتجات</button>
+                                        <div class="collapseColWrap">
+                                            <div class="firstCol columns pe-0">
+                                                <p> <span class="colTitle">المنتجات</span> </p>
                                                 <div class="orderDetails">
                                                     <p> <span class="label">SKU</span> <span class="value">ZD2</span> </p>
                                                     <p> <span class="label">الاسم</span> <span class="value">اسم المنتج</span> </p>
@@ -462,32 +455,24 @@
                                                     <p> <span class="label">المجموع</span> <span class="value">100.00 SAR</span> </p>
                                                 </div>
                                             </div>
-                                            <div class="secLeftCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="secCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <div class="orderDetails">
-                                                    <p>قيمة المنتجات</p>
-                                                    <p>التوصيل</p>
-                                                    <p>دفع عند الاستلام</p>
-                                                    <p>المجموع الكلي</p>
+                                                    <p><span>قيمة المنتجات</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>التوصيل</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>دفع عند الاستلام</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>المجموع الكلي</span> <span>2600.00 SAR</span></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rightCol">
-                                            <div class="firstRightCol">
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                            </div>
-                                            <div class="secRightCol">
-                                                <button class="cta">العميل</button>
+                                            <div class="thirdCol columns">
+                                                <p> <span class="colTitle">العميل</span> </p>
                                                 <p><i class="fa-solid fa-user"></i> <span>قيمة المنتجات</span></p>
                                                 <p><i class="fa-solid fa-phone-flip"></i> <span>966555255145</span></p>
                                                 <p><i class="fa-solid fa-location-dot"></i> <span>الرياض,الربوة,الأبهري
                                                     باب رقم 59</span></p>
                                             </div>
-                                            <div class="thirdRightCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="fourthCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <p>في انتظار
                                                     شركة التوصيل
                                                 </p>
@@ -513,16 +498,19 @@
                             <td>39 ر.ع</td>
                             <td class="settings">
                                 <img src="assets/images/settings.png" alt="settings">
-                                <span data-bs-toggle="collapse" data-bs-target="#details4" aria-expanded="false" aria-controls="details4"><i class="fa-solid fa-chevron-down"></i></span>
+                                <span data-bs-toggle="collapse" data-bs-target="#details4" aria-expanded="false" aria-controls="details4">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="collapseTr">
                             <td colspan="12">
                                 <div class="collapseWrapper collapse" id="details4">
                                     <div class="collapseInnerContent">
-                                        <div class="leftCol">
-                                            <div class="firstLeftCol">
-                                                <button class="cta"> المنتجات</button>
+                                        <div class="collapseColWrap">
+                                            <div class="firstCol columns pe-0">
+                                                <p> <span class="colTitle">المنتجات</span> </p>
                                                 <div class="orderDetails">
                                                     <p> <span class="label">SKU</span> <span class="value">ZD2</span> </p>
                                                     <p> <span class="label">الاسم</span> <span class="value">اسم المنتج</span> </p>
@@ -531,32 +519,24 @@
                                                     <p> <span class="label">المجموع</span> <span class="value">100.00 SAR</span> </p>
                                                 </div>
                                             </div>
-                                            <div class="secLeftCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="secCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <div class="orderDetails">
-                                                    <p>قيمة المنتجات</p>
-                                                    <p>التوصيل</p>
-                                                    <p>دفع عند الاستلام</p>
-                                                    <p>المجموع الكلي</p>
+                                                    <p><span>قيمة المنتجات</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>التوصيل</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>دفع عند الاستلام</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>المجموع الكلي</span> <span>2600.00 SAR</span></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rightCol">
-                                            <div class="firstRightCol">
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                            </div>
-                                            <div class="secRightCol">
-                                                <button class="cta">العميل</button>
+                                            <div class="thirdCol columns">
+                                                <p> <span class="colTitle">العميل</span> </p>
                                                 <p><i class="fa-solid fa-user"></i> <span>قيمة المنتجات</span></p>
                                                 <p><i class="fa-solid fa-phone-flip"></i> <span>966555255145</span></p>
                                                 <p><i class="fa-solid fa-location-dot"></i> <span>الرياض,الربوة,الأبهري
                                                     باب رقم 59</span></p>
                                             </div>
-                                            <div class="thirdRightCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="fourthCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <p>في انتظار
                                                     شركة التوصيل
                                                 </p>
@@ -582,16 +562,19 @@
                             <td>39 ر.ع</td>
                             <td class="settings">
                                 <img src="assets/images/settings.png" alt="settings">
-                                <span data-bs-toggle="collapse" data-bs-target="#details5" aria-expanded="false" aria-controls="details5"><i class="fa-solid fa-chevron-down"></i></span>
+                                <span data-bs-toggle="collapse" data-bs-target="#details5" aria-expanded="false" aria-controls="details5">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="collapseTr">
                             <td colspan="12">
                                 <div class="collapseWrapper collapse" id="details5">
                                     <div class="collapseInnerContent">
-                                        <div class="leftCol">
-                                            <div class="firstLeftCol">
-                                                <button class="cta"> المنتجات</button>
+                                        <div class="collapseColWrap">
+                                            <div class="firstCol columns pe-0">
+                                                <p> <span class="colTitle">المنتجات</span> </p>
                                                 <div class="orderDetails">
                                                     <p> <span class="label">SKU</span> <span class="value">ZD2</span> </p>
                                                     <p> <span class="label">الاسم</span> <span class="value">اسم المنتج</span> </p>
@@ -600,32 +583,24 @@
                                                     <p> <span class="label">المجموع</span> <span class="value">100.00 SAR</span> </p>
                                                 </div>
                                             </div>
-                                            <div class="secLeftCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="secCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <div class="orderDetails">
-                                                    <p>قيمة المنتجات</p>
-                                                    <p>التوصيل</p>
-                                                    <p>دفع عند الاستلام</p>
-                                                    <p>المجموع الكلي</p>
+                                                    <p><span>قيمة المنتجات</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>التوصيل</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>دفع عند الاستلام</span> <span>2600.00 SAR</span></p>
+                                                    <p><span>المجموع الكلي</span> <span>2600.00 SAR</span></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rightCol">
-                                            <div class="firstRightCol">
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                                <p>2600.00 SAR</p>
-                                            </div>
-                                            <div class="secRightCol">
-                                                <button class="cta">العميل</button>
+                                            <div class="thirdCol columns">
+                                                <p> <span class="colTitle">العميل</span> </p>
                                                 <p><i class="fa-solid fa-user"></i> <span>قيمة المنتجات</span></p>
                                                 <p><i class="fa-solid fa-phone-flip"></i> <span>966555255145</span></p>
                                                 <p><i class="fa-solid fa-location-dot"></i> <span>الرياض,الربوة,الأبهري
                                                     باب رقم 59</span></p>
                                             </div>
-                                            <div class="thirdRightCol">
-                                                <button class="cta">الفاتورة</button>
+                                            <div class="fourthCol columns">
+                                                <p> <span class="colTitle">الفاتورة</span> </p>
                                                 <p>في انتظار
                                                     شركة التوصيل
                                                 </p>
@@ -642,6 +617,125 @@
                     </tbody>
                 </table>
                 
+            </div>
+        </div>
+
+        <div class="ordersTableMobileView">
+            <div class="sectionHead">
+                <p class="secHeading"><span><img src="assets/images/cart-icon.png" alt="bar chart"></span>قائمة الطلبات الجديدة</p>
+            </div> 
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"></label>
+                            </div>
+                            <p class="customerName">
+                                <span><i class="fa-solid fa-user-group"></i></span> محمدالسليمان
+                            </p>
+                        </div>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="customerDetails scrollbar">
+                                <div class="force-overflow">
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                </div>
+                            </div>
+                            <div class="orderActions">
+                                <button class="completed">تعديل</button>
+                                <button class="danger">حذف</button>
+                                <div class="form-check form-switch p-0">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                                <button class="completed"><span><i class="fa-brands fa-whatsapp"></i></span>حذف</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2"></label>
+                            </div>
+                            <p class="customerName">
+                                <span><i class="fa-solid fa-user-group"></i></span> محمدالسليمان
+                            </p>
+                        </div>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="customerDetails scrollbar">
+                                <div class="force-overflow">
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                </div>
+                            </div>
+                            <div class="orderActions">
+                                <button class="completed">تعديل</button>
+                                <button class="danger">حذف</button>
+                                <div class="form-check form-switch p-0">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                                <button class="completed"><span><i class="fa-brands fa-whatsapp"></i></span>حذف</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3"></label>
+                            </div>
+                            <p class="customerName">
+                                <span><i class="fa-solid fa-user-group"></i></span> محمدالسليمان
+                            </p>
+                        </div>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <div class="customerDetails scrollbar">
+                                <div class="force-overflow">
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                    <p><a href="tel:966555255145"><span><i class="fa-solid fa-mobile-screen"></i></span><span>966555255145</span></a></p>
+                                    <p><a href="mailto:Test@Gmail.com"><span><i class="fa-regular fa-envelope"></i></span><span>Test@Gmail.com</span></a></p>
+                                    <p><a href="https://maps.app.goo.gl/BxzJjEBvCBUp7nRK7" target="_blank"><span><i class="fa-solid fa-location-dot"></i></span> <span>الرياض/السعودية</span></a></p>
+                                    <p><span><i class="fa-solid fa-cart-shopping"></i></span> <span>50</span></p>
+                                </div>
+                            </div>
+                            <div class="orderActions">
+                                <button class="completed">تعديل</button>
+                                <button class="danger">حذف</button>
+                                <div class="form-check form-switch p-0">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                                <button class="completed"><span><i class="fa-brands fa-whatsapp"></i></span>حذف</button>
+                            </div>
+                        </div>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -703,6 +797,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -719,6 +827,20 @@
                                     </div>
                                     <div class="productBox">
                                         <img src="assets/images/shoes-2.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
                                         <div class="prodDesc">
                                             <p class="productName">اديداس Adidass</p>
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
@@ -773,6 +895,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -808,6 +944,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -824,6 +974,20 @@
                                     </div>
                                     <div class="productBox">
                                         <img src="assets/images/shoes-2.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
                                         <div class="prodDesc">
                                             <p class="productName">اديداس Adidass</p>
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
@@ -909,6 +1073,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -925,6 +1103,20 @@
                                     </div>
                                     <div class="productBox">
                                         <img src="assets/images/shoes-2.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
                                         <div class="prodDesc">
                                             <p class="productName">اديداس Adidass</p>
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
@@ -979,6 +1171,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -1014,6 +1220,20 @@
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
                                         </div>
                                     </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btnWrap">
                                     <a href="#!">شاهد المزيد</a>
@@ -1030,6 +1250,20 @@
                                     </div>
                                     <div class="productBox">
                                         <img src="assets/images/shoes-2.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-3.png" alt="shoes">
+                                        <div class="prodDesc">
+                                            <p class="productName">اديداس Adidass</p>
+                                            <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productBox">
+                                        <img src="assets/images/shoes-4.png" alt="shoes">
                                         <div class="prodDesc">
                                             <p class="productName">اديداس Adidass</p>
                                             <p class="salesCount"> عدد المبيعات : <span class="prodSales">200+</span></p>
@@ -1114,20 +1348,6 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const toggleButtons = document.querySelectorAll('.toggle-details');
-      
-          toggleButtons.forEach(button => {
-            button.addEventListener('click', function () {
-              const targetId = this.getAttribute('data-target');
-              const targetRow = document.getElementById(targetId);
-              targetRow.classList.toggle('show');
-            });
-          });
-        });
-      </script>
     
 </body>
 </html>

@@ -1,12 +1,75 @@
-@media only screen and (max-width:1920px){
-	.storeTasksWrapper {
+@media only screen and (max-width:1920px){}
+@media only screen and (max-width:1600px){
+	.greetingsBar {
+		padding: 35px 35px 35px 35px;
+	}
+	.notificationBar {
+		padding: 20px 40px 20px 20px;
+	}
+	.notificationBar p {
+		font-size: 20px;
+	}
+	.createStoreTasksWrapper {
+		padding: 30px 20px 0 20px;
+	}
+	.createStoreTasksWrapper .storeHead {
 		gap: 20px;
 	}
+	.storeHead .storeTaskHead {
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+	.storeTaskHead .content {
+		width: 100%;
+	}
+	.taskBoxWrapper {
+		padding: 25px 20px;
+		width: 32.5%;
+	}
+	.storeTasksWrapper {
+		row-gap: 20px;
+	}
+	.reportStatusWrapper {
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
+	.statusBox {
+		width: 49%;
+	}
+	.salesAnalyticsWrapper {
+		flex-wrap: wrap;
+	}
+	.salesAnalyticsWrapper .rightCol {
+		width: 100%;
+		padding: 25px 20px;
+	}
+	.salesAnalyticsWrapper .leftcol {
+		width: 100%;
+		flex-direction: row;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 49%;
+	}
+	.orderGraphWrapper {
+		padding: 25px 20px;
+	}
+	.productDisplayWrapper {
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
+	.productDisplayWrapper .leftCol, 
+	.productDisplayWrapper .rightCol {
+		width: 100%;
+		padding: 25px 20px;
+	}
 }
-@media only screen and (max-width:1600px){}
 @media only screen and (max-width:1440px){
 	.productDisplayGrid .nav {
 		gap: 25px;
+	}
+	.taskBoxWrapper {
+		padding: 25px 20px;
+		width: 49%;
 	}
 }
 @media only screen and (max-width:1366px){
@@ -25,6 +88,12 @@
 	}
 }
 @media only screen and (max-width:1280px){
+	.notificationBar {
+		flex-wrap: wrap;
+	}
+	.notificationBar p {
+		width: 90%;
+	}
 	.taskBoxWrapper {
 		padding: 25px 15px;
 	}
@@ -32,6 +101,9 @@
 		gap: 10px;
 	}
 	.productDisplayWrapper .leftCol, .productDisplayWrapper .rightCol {
+		padding: 25px 15px;
+	}
+	.newOrdersBox {
 		padding: 25px 15px;
 	}
 }
@@ -46,7 +118,6 @@
 		font-size: 24px;
 	}
 	.storeTasksWrapper {
-		gap: 0px;
 		justify-content: space-between;
 	}
 	.taskBoxWrapper {
@@ -80,7 +151,7 @@
 		gap: 5px;
 	}
 	.prodFlexBox {
-		gap: 20px
+		gap: 16px;
 	}
 	.newOrdersTableWrapper .table th {
 		font-size: 16px;
@@ -94,10 +165,47 @@
 	.collapseInnerContent .rightCol {
 		width: 58%;
 	}
+	.taskBoxWrapper .taskHead p {
+		font-size: 18px;
+	}
+	.taskBoxWrapper .taskHead .cta {
+		display: inline-block;
+		width: fit-content;
+		margin-bottom: 20px;
+		padding: 4px 10px;
+	}
+	.taskBoxWrapper .taskAction .cta {
+		font-size: 15px;
+		padding: 4px 20px;
+	}
+	.statusBox .report .reportInfo .count {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.statusBox .report .reportInfo .label {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.pieRepresentation {
+		margin: 20px 0;
+	}
+	.salesAnalyticsWrapper .leftcol {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 100%;
+	}
+	.newOrdersBox {
+		width: 100%;
+	}
 }
 @media only screen and (max-width:1170px){}
 @media only screen and (max-width:1040px){}
 @media only screen and (max-width:1024px){
+	.contentWrapper {
+		width: 100%;
+	} 
 	.productDisplayWrapper {
 		flex-wrap: wrap;
 	}
@@ -105,6 +213,31 @@
 	.productDisplayWrapper .rightCol {
 		width: 100%;
 		margin-bottom: 40px;
+	}
+	.salesAnalyticsWrapper {
+		margin: 30px 0;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 49%;
+	}
+	.storeTasksWrapper {
+		padding: 0 0 10px;
+	}
+	.createStoreTasksWrapper {
+		margin: 50px 0;
+	}
+	.orderGraphWrapper {
+		margin-bottom: 30px;
+	}
+	.newOrdersTableWrapper {
+		margin-bottom: 30px;
+	}
+	.productDisplayWrapper {
+		row-gap: 0;
+		margin-bottom: 40px;
+	}
+	.productDisplayWrapper .leftCol, .productDisplayWrapper .rightCol {
+		margin-bottom: 30px;
 	}
 }
 @media only screen and (max-width:991px){
@@ -126,12 +259,6 @@
 	}
 	.salesAnalyticsWrapper .leftcol {
 		flex-wrap: wrap;
-	}
-	.salesAnalyticsWrapper .leftcol .statusBox {
-		width: 100%;
-	}
-	.newOrdersBox {
-		width: 100%;
 	}
 	.orderGraphWrapper {
 		padding: 25px 15px;
@@ -167,17 +294,24 @@
 		font-size: 15px;
 	}
 	.taskBoxWrapper {
-		width: 100%;
+		width: 49%;
+		margin-bottom: 0;
 	}
 	.taskBoxWrapper .taskHead {
 		justify-content: space-between;
+	}
+	.salesAnalyticsWrapper {
+		margin: 20px 0;
+	}
+	.salesAnalyticsWrapper .leftcol {
+		gap: 0;
 	}
 	.reportStatusWrapper {
 		gap: 0;
 	}
 	.statusBox {
-		width: 100%;
-		margin-bottom: 20px;
+		width: 49%;
+		margin-bottom: 10px;
 	}
 	.incomeDisplay {
 		font-size: 15px;
@@ -206,10 +340,33 @@
 	.newOrdersTableWrapper {
 		padding: 25px 15px;
 	}
+	.newOrdersTableWrapper {
+		display: none;
+	}
+	.ordersTableMobileView {
+		display: block;
+		margin-bottom: 45px;
+	}
+	.ordersTableMobileView .sectionHead .secHeading {
+		font-size: 25px;
+		font-weight: bold;
+		color: #6E6565;
+	}
+	.salesAnalyticsWrapper .leftcol .statusBox {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 @media only screen and (max-width:575px){
+	.taskBoxWrapper {
+		width: 100%;
+		margin-bottom: 20;
+	}
 	.createStoreTasksWrapper .storeHead {
 		gap: 20px;
+	}
+	.statusBox {
+		width: 100%;
 	}
 	.incomeDisplay {
 		font-size: 14px;
@@ -261,7 +418,28 @@
 		padding: 25px 15px;
 	}
 	.productBox {
-		width: 100%;
+		width: 49%;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	.ordersTableMobileView .accordion-button {
+		padding-left: 10px;
+		padding-right: 10px;
+		column-gap: 20px;
+	}
+	.ordersTableMobileView .accordion-button .customerName i {
+		margin-left: 10px;
+	}
+	.ordersTableMobileView .accordion-button::after {
+		left: 10px;
+	}
+	.ordersTableMobileView .accordion-button .customerName {
+		text-align: right;
+	}
+	.ordersTableMobileView .accordion-body .orderActions {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px
 	}
 }
 @media only screen and (max-width:385px){
@@ -285,8 +463,9 @@
 		padding: 4px 7px;
 	}
 	.createStoreTasksWrapper {
-		padding: 30px 0px;
+		padding: 30px 0px 0;
 		box-shadow: none;
+		margin-bottom: 20px;
 	}
 	.incomeDisplay {
 		font-size: 14px;
@@ -315,10 +494,16 @@
 	.pieRepresentation canvas {
 		margin: 10px 0;
 	}
+	.productBox {
+		width: 100%;
+	}
 	.productDisplayHead {
 		gap: 15px;
 	}
 	.productDisplayHead .secTitle {
+		font-size: 20px;
+	}
+	.ordersTableMobileView .sectionHead .secHeading {
 		font-size: 20px;
 	}
 }
